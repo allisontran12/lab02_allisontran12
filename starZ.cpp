@@ -17,7 +17,25 @@ void runTests(void);
 string starZ(int width)
 {
   string result="";
-  result = "stub"; // TODO: remove this line, replace with correct code
+  if(width>=3){
+    for (int i=0; i<width;i++){
+      result+="*";}
+    result+="\n";
+    for (int j=0; j<width-2; j++){
+      int locstar=width;
+      for (int k=0; k<width;k++){
+	if (k==locstar){
+	  result+="*";
+	}else{
+	  result+=" ";
+	}} locstar--;
+
+
+    }
+	   //space star lines}
+    for (int i=0; i<width;i++){
+      result+="*";}
+    // result = "stub"; // TODO: remove this line, replace with correct code
   return result;
 }
 
@@ -70,11 +88,17 @@ int main(int argc, char *argv[])
   // TODO: Add code to get width from cmd line arg
   // code that checks if it is -1; if so, call runTests()
   // then exit.
+  if (argc!=2){
+    cerr<<"Usage:  " <<argv[0]<<" width"<<endL;}
+  int width=stoi(arg[1]);
+  if (width==-1){
+    
 
   runTests();
-
+  exit(0);
+  }
   // TODO: Add code that calls the starZ function and prints
   // the result on cout (without an extra newline)
-
+  cout<<starZ(width);
   return 0;
 }
