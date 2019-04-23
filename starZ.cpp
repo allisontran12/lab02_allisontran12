@@ -28,7 +28,7 @@ string starZ(int width)
 	  result+="*";
 	}else{
 	  result+=" ";
-	}} locstar--;
+	}} }locstar--;
 
 
     }
@@ -68,7 +68,8 @@ void runTests(void) {
 
 // Test harness
 
-void assertEquals(string expected, string actual, string message="") {
+void assertEquals(string expected, string actual, string message="") 
+{
   if (expected==actual) {
     cout << "PASSED: " << message << endl;;
   } else {
@@ -88,17 +89,34 @@ int main(int argc, char *argv[])
   // TODO: Add code to get width from cmd line arg
   // code that checks if it is -1; if so, call runTests()
   // then exit.
-  if (argc!=2){
-    cerr<<"Usage:  " <<argv[0]<<" width"<<endL;}
-  int width=stoi(arg[1]);
-  if (width==-1){
-    
-
-  runTests();
-  exit(0);
-  }
-  // TODO: Add code that calls the starZ function and prints
-  // the result on cout (without an extra newline)
-  cout<<starZ(width);
-  return 0;
+  {
+   if(argc == 2)                   //accepts only 1 command line argument apart from program name
+   {
+       int inp = *argv[1] - 48;
+       if(inp >= 3)              
+       {
+           for(int i=0; i<inp; i++)
+           {
+               for(int j=0; j<inp; j++)
+               {
+                   if(i==0 || i==(inp-1) || i == (inp-j-1))
+                       cout << "*";
+                   else
+                       cout << " ";
+               }
+               cout << endl;
+           }
+       }
+       else
+       {
+           cout << "Nothing to print, invalid input" << endl;
+       }
+   }
+   else
+       cout << "ERROR! Program accepts 1 command line argument.\n";
+   return 0;
+ }
 }
+	
+
+
