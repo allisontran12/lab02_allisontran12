@@ -28,7 +28,7 @@ string starZ(int width)
 	  result+="*";
 	}else{
 	  result+=" ";
-	}} }locstar--;
+	}} locstar--;
 
 
     }
