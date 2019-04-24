@@ -37,6 +37,7 @@ string starZ(int width)
       result+="*";}
     // result = "stub"; // TODO: remove this line, replace with correct code
   return result;
+ }
 }
 
 // Test-Driven Development; check expected results against actual
