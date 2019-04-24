@@ -112,7 +112,7 @@ int main(int argc, char *argv[])
        }
        else
        {
-           cout << "Nothing to print, invalid input" << endl;
+           cout << "" << endl;
        }
    }
    else
