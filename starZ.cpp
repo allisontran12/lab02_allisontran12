@@ -91,7 +91,7 @@ int main(int argc, char *argv[])
   // TODO: Add code to get width from cmd line arg
   // code that checks if it is -1; if so, call runTests()
   // then exit.
-  {
+  
    if(argc == 2)                   //accepts only 1 command line argument apart from program name
    {
        int inp = *argv[1] - 48;
@@ -102,9 +102,9 @@ int main(int argc, char *argv[])
                for(int j=0; j<inp; j++)
                {
                    if(i==0 || i==(inp-1) || i == (inp-j-1))
-                       cout << "*";
+		   {cout << "*";}
                    else
-                       cout << " ";
+		   {cout << " ";}
                }
                cout << endl;
            }
@@ -115,9 +115,9 @@ int main(int argc, char *argv[])
        }
    }
    else
-       cout << "ERROR! Program accepts 1 command line argument.\n";
+   { cout << "ERROR! Program accepts 1 command line argument.\n";}
    return 0;
- }
+ 
 }
 	
 
