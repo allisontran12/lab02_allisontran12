@@ -1,5 +1,6 @@
 // starC.cpp   A demonstration of ASCII Art printing C characters
-//04/22/19 Allison Tran and Marissa Santiago
+// 04/22/19 Allison Tran and Marissa Santiago
+// starC.cpp renders the letters C, but requires a minimum width of 2, and a minimum height of 3. Otherwise it returns an empty string.
 
 #include <iostream>
 #include <cstdlib>
