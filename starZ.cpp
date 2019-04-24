@@ -1,4 +1,5 @@
-// starZ.cpp   A demonstration of ASCII Art printing C characters
+// starZ.cpp A demonstration of ASCII Art printing C characters
+//04/22/19 Allison Tran and Marissa Santiago
 
 #include <iostream>
 #include <cstdlib>
