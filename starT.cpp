@@ -17,7 +17,6 @@ string starT(int width, int height)
   string result="";
   //  result+="\n";
   if(((width%2)==1)&&(width>=3)&&(height>=2)){
-    result+="\n";
     for (int i=0;i<width;i++){
       result+="*";}
     result+="\n";
