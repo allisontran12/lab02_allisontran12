@@ -112,7 +112,7 @@ int main(int argc, char *argv[])
        }
        else
        {
-           cout << "" << endl;
+           cout << "";
        }
    }
    else
