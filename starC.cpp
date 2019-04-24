@@ -16,9 +16,19 @@ void runTests(void);
 string starC(int width, int height)
 {
   string result="";
-  result = "stub"; // TODO: remove this line, replace with correct code
+  if(((width%2)==1)&&(width>=2)&&(height>=3)){
+    for (int i=0; i<width;i++){
+      result+="*";}
+    result+="\n";
+
+    for (int p=0;p<height-1;p++){
+      for (int j=0; j<width; j++){
+        result+="*";}
+      result+="\n";} // TODO: remove this line, replace with correct code       
   return result;
+  }
 }
+
 
 // Test-Driven Development; check expected results against actual
 
@@ -77,8 +87,18 @@ int main(int argc, char *argv[])
   // TODO: Add code to get width and height from cmd line args
   // code that checks if they are both -1; if so, call runTests()
   // then exit.
+  if (argc==2){
+    cerr<<"Usage:  "<<argv[0]<<" width height"<< "\n";
+    exit(1);
+  }
+  int width=stoi(argv[1]);
+  int height=stoi(argv[2]);
+  if (width==-1&&height==-1){
+
 
   runTests();
+  exit(0);
+ }
 
   // TODO: Add code that calls the starC function and prints
   // the result on cout (without an extra newline)
