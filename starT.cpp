@@ -22,11 +22,11 @@ string starT(int width, int height)
     result+="\n";
     int spacewidth1= (width/2)-1;
     for (int p=0;p<height-1;p++){
-        for (int j=0; j<spacewidth1; j++){
+        for (int j=0; j<=spacewidth1; j++){
           result+=" ";}
       result+="*";
       int spacewidth2= (width/2)-1;
-    for (int k=0;k<spacewidth2; k++){
+    for (int k=0;k<=spacewidth2; k++){
       result+=" ";}
       
     result+="\n";
