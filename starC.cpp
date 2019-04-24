@@ -21,10 +21,14 @@ string starC(int width, int height)
       result+="*";}
     result+="\n";
 
-    for (int p=0;p<height-1;p++){
-      for (int j=0; j<width; j++){
-        result+="*";}
-      result+="\n";} // TODO: remove this line, replace with correct code       
+    for (int p=0;p<height-2;p++){
+      result+="*";
+      for (int j=0; j<width-1; j++){
+        
+       result+=" ";}
+      result+="\n";}
+         for (int k=0; k<width;k++){
+      result+="*";}
   return result;
   }
 }
@@ -97,8 +101,10 @@ int main(int argc, char *argv[])
 
 
   runTests();
+    
   exit(0);
  }
+  cout<<starC(width, height);
 
   // TODO: Add code that calls the starC function and prints
   // the result on cout (without an extra newline)
