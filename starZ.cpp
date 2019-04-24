@@ -33,9 +33,10 @@ string starZ(int width)
 
     }
 	   //space star lines}
-    for (int i=0; i<width;i++){
-      result+="*";}
-  }else{result="'Nothing to print, invalid input\n'"}
+    for (int i=0; i<width;i++)
+	    result+="*";
+	  result+="\n";
+  }
     // result = "stub"; // TODO: remove this line, replace with correct code
   return result;
  
