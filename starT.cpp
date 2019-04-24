@@ -1,5 +1,7 @@
 // starT.cpp   A demonstration of ASCII Art printing T characters
-//04/22/19 Allison Tran and Marissa Santiago
+// 04/22/19 
+//Allison Tran and Marissa Santiago
+// starT renders the letters T, but requires a minimum width of 3, and a minimum height of 2. Otherwise it returns an empty string.
 
 #include <iostream>
 #include <cstdlib>
