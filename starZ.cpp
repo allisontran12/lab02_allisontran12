@@ -1,5 +1,6 @@
 // starZ.cpp A demonstration of ASCII Art printing C characters
-// 04/22/19 Allison Tran and Marissa Santiago
+// 04/22/19 
+//Allison Tran and Marissa Santiago
 // starZ renders the letters Z, but requires a minimum width of 3. It only takes one parameter, always assuming height = width
 
 #include <iostream>
