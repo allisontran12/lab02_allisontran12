@@ -35,9 +35,10 @@ string starZ(int width)
 	   //space star lines}
     for (int i=0; i<width;i++){
       result+="*";}
+  }else{result="'Nothing to print, invalid input\n'"}
     // result = "stub"; // TODO: remove this line, replace with correct code
   return result;
- }
+ 
 }
 
 // Test-Driven Development; check expected results against actual
