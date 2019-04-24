@@ -29,8 +29,9 @@ string starC(int width, int height)
       result+="\n";}
          for (int k=0; k<width;k++){
       result+="*";}
-  return result;
   }
+  return result;
+  
 }
 
 
