@@ -17,7 +17,7 @@ void runTests(void);
 string starZ(int width)
 {
   string result="";
-  if(width>=3){/*
+  if(width>=3){
     for (int i=0; i<width;i++){
       result+="*";}
     result+="\n";
@@ -36,19 +36,6 @@ string starZ(int width)
     for (int i=0; i<width;i++)
 	    result+="*";
 	  result+="\n";
-  }*/
-	  
-	  
- for(int i=0; i<width; i++)
-           {
-               for(int j=0; j<width; j++)
-               {
-                   if(i==0 || i==(width-1) || i == (width-j-1))
-		   {result+= "*";}
-                   else
-		   {result+= " ";}
-               }
-               result+="\n";	  
   }
     // result = "stub"; // TODO: remove this line, replace with correct code
   return result;
@@ -105,18 +92,12 @@ int main(int argc, char *argv[])
   // TODO: Add code to get width from cmd line arg
   // code that checks if it is -1; if so, call runTests()
   // then exit.
-	if (argc!=2){cerr << "ERROR! Program accepts 1 command line argument.\n";
-   exit(1);}
-	
-		
   
-    int inp =stoi(argv[1]);
-	
-    	if(width=-1){runTests();exit(0);
-	}
-     
-       if(inp >= 3)    {starZ(inp);}          
-       {/*
+   if(argc == 2)                   //accepts only 1 command line argument apart from program name
+   {
+       int inp = *argv[1] - 48;
+       if(inp >= 3)              
+       {
            for(int i=0; i<inp; i++)
            {
                for(int j=0; j<inp; j++)
@@ -133,9 +114,11 @@ int main(int argc, char *argv[])
        {
            cout << "";
        }
-   }*/
-	       
-  return 0;
+   }
+   else
+   { cout << "ERROR! Program accepts 1 command line argument.\n";}
+   return 0;
+ 
 }
 	
 
