@@ -16,7 +16,7 @@ void runTests(void);
 string starC(int width, int height)
 {
   string result="";
-  if(((width%2)==1)&&(width>=2)&&(height>=3)){
+  if((width>=2)&&(height>=3)){
     for (int i=0; i<width;i++){
       result+="*";}
     result+="\n";
@@ -29,6 +29,7 @@ string starC(int width, int height)
       result+="\n";}
          for (int k=0; k<width;k++){
       result+="*";}
+    result+="\n";
   }
   return result;
   
