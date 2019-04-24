@@ -26,8 +26,6 @@ string starT(int width, int height)
       result+=" ";}
     result+="*";
     for (int k=0;k<spacewidth; k++){
-      result+=" ";}
-   
       result+="\n";
     }
  
