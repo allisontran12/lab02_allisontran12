@@ -108,10 +108,15 @@ int main(int argc, char *argv[])
                cout << endl;
            }
        }
-  return 0;
+   else
+       {
+           cout << "Nothing to print, invalid input" << endl;
+       }
    }
-  }
-       
+   else
+       cout << "ERROR! Program accepts 1 command line argument.\n";
+   return 0;
+} 
 	
 
 
